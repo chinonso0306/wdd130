@@ -1,0 +1,82 @@
+/* General Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Aside Section */
+aside {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #004080;
+  padding: 20px;
+  background-color: #e6f0ff;
+  color: #00264d;
+  border-radius: 8px;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  border-top: 2px solid #004080;
+  text-align: center;
+  padding: 15px;
+  background-color: #00264d;
+  color: white;
+}
