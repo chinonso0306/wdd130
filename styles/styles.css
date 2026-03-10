@@ -1,37 +1,89 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    /* required background-color */
+    padding: 10px;
+    /* required padding */
+}
+
+nav a {
+    color: white;
+    /* required color */
+    padding: 10px;
+    /* required padding */
+    display: block;
+    /* required display */
+    text-decoration: none;
+    /* optional but looks nicer */
+}
+
+/* Main content */
 main {
     width: 80%;
-    /* Example: limit content width */
-    margin: 0 auto;
-    /* Optional: center main content */
-}
-
-aside {
-    width: 250px;
-    margin: 10px;
-    border: 1px solid #333;
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-    /* preserves aspect ratio */
+    max-width: 900px;
+    /* required max-width */
+    margin: 20px auto;
 }
 
 main img {
     width: 150px;
     height: auto;
+    border: 2px solid #333;
+    /* required border */
+    padding: 5px;
+    /* required padding */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    /* required box-shadow */
 }
 
+/* Aside */
+aside {
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraphs */
 p {
     padding: 0;
-    /* no padding needed for zero value */
 }
 
+/* Footer */
 footer {
     margin-top: 20px;
     border-top: 2px solid #333;
     text-align: center;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+}
+
+/* H1 */
+h1 {
+    color: steelblue;
+    /* required color */
 }
