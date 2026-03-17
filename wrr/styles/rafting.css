@@ -26,12 +26,15 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: #033d03;
+    /* darker green */
     color: var(--accent2-color);
 }
 
 nav a {
-    color: var(--secondary-color);
+    color: #ffffff;
+    /* white = perfect contrast */
+    font-weight: bold;
 }
 
 /* Layout width */
