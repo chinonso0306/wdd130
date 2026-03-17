@@ -25,16 +25,22 @@ body {
     color: var(--accent1-color);
 }
 
+/* Header */
 header {
-    background-color: #033d03;
-    /* darker green */
+    background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
+/* Navigation links */
 nav a {
     color: #ffffff;
-    /* white = perfect contrast */
+    /* high contrast */
     font-weight: bold;
+}
+
+/* Hover effect (uses secondary color ✅) */
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 /* Layout width */
@@ -61,6 +67,11 @@ article {
     padding: 8px;
 }
 
+/* Section styling (uses secondary color nicely) */
+section {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
 /* Social media links */
 .socialmedia a {
     text-decoration: none;
@@ -77,6 +88,7 @@ article {
     height: auto;
 }
 
+/* Hero heading overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -85,17 +97,21 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
 }
 
+/* Hero article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
+    border-left: 5px solid var(--secondary-color);
+    /* uses variable */
 }
 
+/* Article image */
 .hero article img {
     float: right;
     width: 125px;
