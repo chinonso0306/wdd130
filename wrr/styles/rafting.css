@@ -25,6 +25,15 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+nav a {
+    color: var(--secondary-color);
+}
+
 /* Layout width */
 header,
 main,
