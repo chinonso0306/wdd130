@@ -23,22 +23,33 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    line-height: 1.5;
 }
 
-/* Header */
+/* Header Grid */
 header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
-/* Navigation links */
+/* Nav Flex */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
 nav a {
     color: #ffffff;
-    /* high contrast */
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Hover effect (uses secondary color ✅) */
 nav a:hover {
     color: var(--secondary-color);
 }
@@ -63,16 +74,21 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 16px 0;
     padding: 8px;
 }
 
-/* Section styling (uses secondary color nicely) */
+/* Section styling */
 section {
     border-bottom: 2px solid var(--secondary-color);
 }
 
 /* Social media links */
+.socialmedia {
+    display: flex;
+    gap: 12px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -108,12 +124,37 @@ section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-left: 5px solid var(--secondary-color);
-    /* uses variable */
 }
 
-/* Article image */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 10px;
+}
+
+/* Adventures Section Flex */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.adventures figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Flex */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
