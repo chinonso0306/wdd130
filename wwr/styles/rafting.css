@@ -158,3 +158,25 @@ footer {
     align-items: center;
     padding: 10px 0;
 }
+
+.contact-info,
+.employees,
+.contact-form {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
