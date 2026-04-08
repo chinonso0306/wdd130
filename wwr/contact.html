@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contact Us | White Water Rafting</title>
 
     <meta name="description"
@@ -18,7 +17,7 @@
 
     <!-- Header -->
     <header>
-        <img src="images/logo.png" alt="WWR Logo">
+        <img src="images/logo.png" alt="White Water Rafting company logo">
 
         <nav>
             <ul>
@@ -41,8 +40,10 @@
             <p><strong>Phone:</strong> +234 800 123 4567</p>
             <p><strong>Email:</strong> info@wwr.com</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!" width="600" height="450"
-              loading="lazy">
+            <!-- FIXED GOOGLE MAP -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019484984019!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
 
@@ -50,20 +51,25 @@
         <section class="employees">
             <h2>Our Team</h2>
 
-            <figure>
-                <img src="images/employee1.jfif" alt="John - General Manager">
-                <figcaption>John – General Manager</figcaption>
-            </figure>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jfif"
+                      alt="John, General Manager at White Water Rafting">
+                    <figcaption>John – General Manager</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/employee2.jfif" alt="Sarah - Raft Guide">
-                <figcaption>Sarah – Senior Raft Guide</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/employee2.jfif"
+                      alt="Sarah, Senior Raft Guide leading river tours">
+                    <figcaption>Sarah – Senior Raft Guide</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/employee3.jfif" alt="Mike - Customer Support">
-                <figcaption>Mike – Customer Support</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/employee3.jfif"
+                      alt="Mike, Customer Support representative assisting clients">
+                    <figcaption>Mike – Customer Support</figcaption>
+                </figure>
+            </div>
         </section>
 
         <!-- Contact Form -->
@@ -78,22 +84,27 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <p>Purpose of Message:</p>
+                <!-- FIXED RADIO GROUP -->
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
 
-                <input type="radio" id="general" name="purpose" value="general">
-                <label for="general">General Inquiry</label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
 
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" required></textarea>
 
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
 
                 <button type="submit">Send Message</button>
 
@@ -108,15 +119,15 @@
 
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook Icon">
+                <img src="images/facebook.svg" alt="Facebook icon">
             </a>
 
             <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
             </a>
 
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram Icon">
+                <img src="images/instagram.svg" alt="Instagram icon">
             </a>
         </nav>
     </footer>
